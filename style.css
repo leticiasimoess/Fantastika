@@ -57,7 +57,7 @@ header nav {
 
 /* PRIMEIRO PET - banner*/
 
-.banner{
+.bannerPrimeiroPet{
     background-image: url("./img/birthday-hat-dog.png");/* imagem de fundo */
     background-size: cover;/* Ajusta o tamanho da imagem para cobrir todo o banner */
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@ header nav {
    
 }
 /* Estilos para o 'h2' dentro do banner */
-.banner h2{
+.bannerPrimeiroPet h2{
     font-weight: 800;
     position: relative;
     bottom: 30vh;
@@ -92,7 +92,7 @@ figure .logopet1{
 
 
 /* SEGUNDO PET */
-.anuncio{
+.anuncioSegundoPet{
     background-image: url("./img/dog-with-animal-hat.png");
     display: flex;
     align-items:center;
@@ -106,14 +106,14 @@ article{
     left: 90px;
 }
 
-.anuncio h3{
+.anuncioSegundoPet h3{
     color: #3A342F;
     font-size: 3rem;
     width: 50vw;
     margin-bottom: 34px;
 }
 
-.anuncio p{
+.anuncioSegundoPet p{
     font-weight: 500;
     font-size: 2rem;
     width: 42vw;
@@ -132,12 +132,13 @@ article{
     top: 60px;
     transition: 500ms;
     color: #FFFFFF;
-
+}
+.fale-conosco a{
+    color: #fff;
 }
 
-
 /* TERCEIRO PET */
-.poster{
+.posterTerceiroPet{
     background-image: url("./img/dog-on-the-side.png");
     display: flex;
     align-items:center;
@@ -148,13 +149,13 @@ article{
     width: auto;/*largura*/
 }
 
-div .terceiro-pet{
+.terceiro-pet{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
- .terceiro-pet h4{
+ .posterTerceiroPet h4{
     color: #FFFFFF;
     font-weight: 700;
     font-size: 3.4rem;
@@ -163,7 +164,7 @@ div .terceiro-pet{
    height: 28vh;
 }
 
-.terceiro-pet p{
+.posterTerceiroPet p{
     color: #ffffff;
     font-size: 1.8rem;
     width: 42vw;/*largura*/
@@ -172,17 +173,21 @@ div .terceiro-pet{
     margin-right: 90px;
 }
  
-.fale-conosco2{
+.fale-conosco2 {
     background-color: #FFFFFF;
     color: #252525;
     width: 18vw;
     height: 15vh;
-    border: none;/*para remover a borda de um elemento*/
+    border: none;/*para remover a borda do elemento*/
     border-radius: 50px;
     font-size: 2rem;
     font-weight: 500;
     margin-left: 8vh;
-    transition: 500ms;
+}
+
+button a {
+    text-decoration: none;
+    color: #252525;
 }
 
 
@@ -282,8 +287,140 @@ footer h5 {
     text-align: center;
 }
 
+   /*MEDIA QUERY*/
+/*Dimensão da pagina pixel5 */
+@media screen and (max-width: 393px ){
+/*Header */
+ figure img{
+    width: 60px;
+    height: 30px;
+}
 
+h1{
+   font-size: 13px;
+}
+.icones{
+    height: 13px;
+    width: 13px;
+}
+    /*PRIMEIRO PET*/
+    .bannerPrimeiroPet {
+      background-image: url("./img/primeiropet-mobile.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+    }
 
+    .bannerPrimeiroPet h2{
+        font-weight: 800;
+        position: relative;
+        bottom: 30vh;
+        width: 60vw;
+        height: 14vh;
+        font-size: 1.4rem; /*Tamanho do h2*/
+        text-align: center;/* Alinhamento do texto */
+        color: #fff;
+    }
+
+    figure .logopet1 {
+        width: 98px; /* Defina a largura conforme necessário */
+        height: auto;
+        position: relative; /* Define a posição relativa para o contêiner */
+        right: 22px; /* Define a distância da borda direita do contêiner pai */
+        bottom:210px;
+    }
+  
+    /*SEGUNDO PET*/
+    .anuncioSegundoPet {
+      background-image: url("./img/segundopet-mobile.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+    }
+
+    article{
+        position: relative;
+        left: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .anuncioSegundoPet h3{
+        font-size: 1.6rem;
+        width: 60vw;
+    }
+    
+    .anuncioSegundoPet p{
+        font-size: 1rem;
+        width: 70vw;
+    }
+   
+    .fale-conosco{
+        background-color:  #3A342F;
+        width:40vw;
+        height: 6vh;
+        border: none;
+        border-radius: 30px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #FFFFFF;
+     
+    }
+    .fale-conosco a{
+        color: #fff;
+    }
+    
+
+  /*TERCEIRO PET*/
+    .posterTerceiroPet {
+      background-image: url("./img/terceiropet-mobile.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+    }
+
+    .terceiro-pet{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        left: 10px;
+       
+    }
+
+    .posterTerceiroPet h4{
+        font-size: 1.6rem;
+        white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+        width: 90vw;
+        height: 12vh;
+    }
+    
+    .posterTerceiroPet p{
+        font-size: 1rem;
+        width: 90vw;
+       
+    }
+
+    .fale-conosco2{
+        background-color:  #FFFFFF;
+        width:40vw;
+        height: 6vh;
+        border: none;
+        border-radius: 30px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #3A342F;
+     
+    }
+    .fale-conosco2 a{
+        color: #3A342F;
+    }
+    
+}
 
 
 
